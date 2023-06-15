@@ -1,9 +1,7 @@
 Amazon SQS Extended Client Library for .NET
 ===========================================
 
-[![Stand With Ukraine](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/banner2-direct.svg)](https://vshymanskyy.github.io/StandWithUkraine)
-
-[![Build status](https://github.com/raol/amazon-sqs-net-extended-client-lib/actions/workflows/dotnet-core-desktop.yml/badge.svg)](https://github.com/raol/amazon-sqs-net-extended-client-lib/actions)
+[![Build status](https://github.com/maxime-gagnon-croesus/amazon-sqs-net-extended-client-lib/actions/workflows/dotnet-core-desktop.yml/badge.svg)](https://github.com/maxime-gagnon-croesus/amazon-sqs-net-extended-client-lib/actions)
 
 This is port to .NET of existing [Amazon Extended Client Library for Java](https://github.com/awslabs/amazon-sqs-java-extended-client-lib)
 It enables you to store message payloads in S3 and hence overcomes message size limitation of the SQS.
@@ -19,7 +17,7 @@ With this library you can:
 
 ## Installation
 
-[![Nuget](https://img.shields.io/nuget/v/Amazon.SQS.ExtendedClient.svg?style=flat)](https://www.nuget.org/packages/Amazon.SQS.ExtendedClient/)
+[![Nuget - To be changed](https://img.shields.io/nuget/v/Amazon.SQS.ExtendedClient.svg?style=flat)](https://www.nuget.org/packages/Amazon.SQS.ExtendedClient/)
 
 To install via nuget, run following command in the Package Manager Console
 ```PowerShell

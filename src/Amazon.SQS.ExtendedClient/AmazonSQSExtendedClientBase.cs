@@ -457,6 +457,42 @@ namespace Amazon.SQS.ExtendedClient
             return amazonSqsToBeExtended.UntagQueueAsync(request, cancellationToken);
         }
 
+#if NET45
+        public CancelMessageMoveTaskResponse CancelMessageMoveTask(CancelMessageMoveTaskRequest request)
+        {
+            return amazonSqsToBeExtended.CancelMessageMoveTask(request);
+        }
+#endif
+
+        public Task<CancelMessageMoveTaskResponse> CancelMessageMoveTaskAsync(CancelMessageMoveTaskRequest request, CancellationToken cancellationToken = default)
+        {
+            return amazonSqsToBeExtended.CancelMessageMoveTaskAsync(request, cancellationToken);
+        }
+
+#if NET45
+        public ListMessageMoveTasksResponse ListMessageMoveTasks(ListMessageMoveTasksRequest request)
+        {
+            return amazonSqsToBeExtended.ListMessageMoveTasks(request);
+        }
+#endif
+
+        public Task<ListMessageMoveTasksResponse> ListMessageMoveTasksAsync(ListMessageMoveTasksRequest request, CancellationToken cancellationToken = default)
+        {
+            return amazonSqsToBeExtended.ListMessageMoveTasksAsync(request, cancellationToken);
+        }
+
+#if NET45
+        public StartMessageMoveTaskResponse StartMessageMoveTask(StartMessageMoveTaskRequest request)
+        {
+            return amazonSqsToBeExtended.StartMessageMoveTask(request);
+        }
+#endif
+
+        public Task<StartMessageMoveTaskResponse> StartMessageMoveTaskAsync(StartMessageMoveTaskRequest request, CancellationToken cancellationToken = default)
+        {
+            return amazonSqsToBeExtended.StartMessageMoveTaskAsync(request, cancellationToken);
+        }
+
         public IClientConfig Config => amazonSqsToBeExtended.Config;
 
         public ISQSPaginatorFactory Paginators => amazonSqsToBeExtended.Paginators;

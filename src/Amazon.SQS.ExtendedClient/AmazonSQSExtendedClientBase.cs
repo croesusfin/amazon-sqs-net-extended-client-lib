@@ -6,6 +6,7 @@ namespace Amazon.SQS.ExtendedClient
     using System.Collections.Generic;
     using System.Threading;
     using System.Threading.Tasks;
+    using Amazon.Runtime.Endpoints;
     using Model;
 
     public abstract class AmazonSQSExtendedClientBase : IAmazonSQS
@@ -491,6 +492,11 @@ namespace Amazon.SQS.ExtendedClient
         public Task<StartMessageMoveTaskResponse> StartMessageMoveTaskAsync(StartMessageMoveTaskRequest request, CancellationToken cancellationToken = default)
         {
             return amazonSqsToBeExtended.StartMessageMoveTaskAsync(request, cancellationToken);
+        }
+
+        public Endpoint DetermineServiceOperationEndpoint(AmazonWebServiceRequest request)
+        {
+            return amazonSqsToBeExtended.DetermineServiceOperationEndpoint(request);
         }
 
         public IClientConfig Config => amazonSqsToBeExtended.Config;
